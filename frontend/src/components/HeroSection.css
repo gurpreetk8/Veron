@@ -1,0 +1,116 @@
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    background:#fff7ad;
+    color: white;
+    padding: 80px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Background Overlay */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    
+  }
+  
+  /* Content Container */
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+    
+  }
+  
+  /* Hero Title */
+  .hero-title {
+    font-size: 2.5rem;
+    font-family: Bebas Neue;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #052f32;
+  }
+
+  
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-family: Raleway ;
+    color: #052f32;
+    opacity: 0.8;
+    margin-bottom: 24px;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #111827;
+  }
+  
+  .search-button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background: #1e40af;
+  }
+  
+  /* Call to Action Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  .explore-btn {
+    background: #ed9556;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .explore-btn:hover {
+    background: #eab308;
+  }
+  
+  .subscribe-btn {
+    background: #9b93db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subscribe-btn:hover {
+    background: #1e40af;
+  }
+  
