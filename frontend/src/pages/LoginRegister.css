@@ -1,0 +1,169 @@
+/* Center the form */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Common Form Styling */
+.form-box {
+  background: #f5f5f5;
+  padding: 35px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Register Form Tweaks */
+.register-form {
+  padding: 20px;
+  width: 380px;
+}
+
+.register-form .profile-selection {
+  margin-bottom: 10px;
+}
+
+.register-form .input-group {
+  margin-bottom: 8px;
+}
+
+.register-form .checkbox-group {
+  margin-top: 5px;
+}
+
+.register-form .btn {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Heading */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Profile Picture */
+.profile-selection {
+  margin-bottom: 15px;
+}
+
+.profile-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.profile-options img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.profile-options img:hover {
+  transform: scale(1.1);
+}
+
+.profile-options img.selected {
+  border: 3px solid blue;
+}
+
+/* Input Fields */
+.input-group {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  background: #555;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: black;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Forgot Password */
+.forgot-password {
+  text-align: right;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Toggle */
+.toggle-form span {
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+
+/* Scroll Unrolling Animation */
+@keyframes scrollUnroll {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.scroll-unroll {
+  animation: scrollUnroll 0.6s ease-out;
+  transform-origin: top;
+}
+
+
+
+

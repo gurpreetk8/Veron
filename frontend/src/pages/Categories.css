@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-fill-mode: both;
+  }
+  
+  .animate-fade-up {
+    animation: fadeIn 1s ease-out forwards;
+    animation-fill-mode: both;
+  }
+  
+  
+  /* Main Category Cards */
+  .category-card {
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    height: 10rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .category-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+
+  .category-card.active {
+    border: 3px solid #6d28d9; /* Indigo or any highlight color */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  
+
+  
+  /* Genre Cards */
+  .genre-card {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .genre-card:hover {
+    transform: scale(1.05);
+  }
+
+
+  

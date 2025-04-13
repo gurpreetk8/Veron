@@ -1,0 +1,51 @@
+.upcoming-releases {
+    background: linear-gradient(135deg, #cce7ff, #99c2ff);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .upcoming-releases:hover {
+    transform: scale(1.02);
+  }
+  
+  .upcoming-releases h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .upcoming-releases .release-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .upcoming-releases .release-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .upcoming-releases .release-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .upcoming-releases img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .upcoming-releases p {
+    font-size: 14px;
+    color: #555;
+  }
+  
