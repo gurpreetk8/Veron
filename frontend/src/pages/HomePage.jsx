@@ -7,8 +7,11 @@ import Trending from '../components/Trending';
 import CounterSection from '../components/CounterSection';
 import Footer from '../components/Footer';
 import BookOfTheMonth from '../components/BookOfTheMonth';
-import UpcomingReleases from '../components/UpcomingReleases';
-import UserDashboard from "./UserDashboard";
+
+
+
+import HomeFeedback from '../components/Feedback/HomeFeedback';
+
 
 
 
@@ -25,10 +28,12 @@ function HomePage() {
     <Slideshow />
     <Trending />
     
-    <CounterSection />
+   
+    
+    <HomeFeedback />
     <Footer /> 
 
-    <UserDashboard />
+    
       
     </>
   );

@@ -7,6 +7,9 @@ import Categories from './pages/Categories';
 import GenrePage from './pages/GenrePage';
 import SeriesDetails from './pages/SeriesDetails';
 import UserDashboard from './pages/UserDashboard';
+import CommunityPage from './pages/CommunityPage.jsx';
+
+import Feedback from './pages/Feedback';
 
 
 function App() {
@@ -21,6 +24,10 @@ function App() {
         <Route path="/Genres/:genreName" element={<GenrePage />} />
         <Route path="/series/:slug" element={<SeriesDetails />} />
         <Route path="/UserDashboard" element={<UserDashboard />} />
+        <Route path="/Community" element={<CommunityPage />} />
+
+
+        <Route path="/Feedback" element={<Feedback />} />
         
       </Routes>
     </Router>

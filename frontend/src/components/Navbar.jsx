@@ -52,8 +52,8 @@ export default function Navbar() {
               <a href="/Categories?type=Non-Fiction">Non-Fiction</a>
             </div>
           </div>
-
-          <a href="#" className="nav-item">Popular</a>
+        
+          <a href="/Community" className="nav-item">Community</a>
           <a href="#" className="nav-item">Request Book</a>
         </div>
 

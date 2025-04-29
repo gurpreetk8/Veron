@@ -17,9 +17,10 @@ const nonfictionImages = import.meta.glob(
 );
 
 const getGenreBg = (genre, category) => {
-  const folder = category === "Fiction" ? fictionImages : nonfictionImages;
-  const filename = genre.toLowerCase().replace(/\s+/g, "-") + ".png";
-  const path = `../../assets/genres/${category.toLowerCase()}/${filename}`;
+  const normalizedCategory = category === "Non-Fiction" ? "nonfiction" : "fiction";
+  const folder = category === "Non-Fiction" ? nonfictionImages : fictionImages;
+  const filename = genre.toLowerCase().replace(/\s+/g, "-").replace(/&/g, "and") + ".png";
+  const path = `../../assets/genres/${normalizedCategory}/${filename}`;
   return folder[path];
 };
 
@@ -160,20 +161,22 @@ const CategoryCard = () => {
               <motion.div
                 key={genre}
                 onClick={() => handleGenreClick(genre)}
-                className="genre-card text-white p-4 rounded-2xl shadow-md cursor-pointer bg-cover bg-center h-40 flex items-center justify-center"
-                style={{
-                  backgroundImage: `url(${getGenreBg(genre, selectedCategory.title)})`,
-                }}
+                className="genre-card relative overflow-hidden cursor-pointer rounded-xl transition-shadow duration-300"
                 variants={cardVariant}
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0px 8px 20px rgba(128, 90, 213, 0.4)",
                 }}
+                style={{
+                  backgroundImage: `url(${getGenreBg(genre, selectedCategory.title)})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  height: "10rem",
+                }}
               >
-                <div className="bg-black bg-opacity-40 rounded-xl px-4 py-2">
-                  <h4 className="text-lg font-semibold text-center">
-                    {genre}
-                  </h4>
+                <div className="absolute inset-0 bg-opacity-30 transition duration-300 rounded-xl" />
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-center text-md font-semibold drop-shadow">
+                  {genre}
                 </div>
               </motion.div>
             ))}

@@ -32,7 +32,7 @@ const Footer = () => {
       {/* Navigation Links */}
       <nav className="footer-nav">
         <a href="#">About</a>
-        <a href="#">Feedback</a>
+        <a href="/Feedback">Feedback</a>
         <a href="#">Help</a>
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
