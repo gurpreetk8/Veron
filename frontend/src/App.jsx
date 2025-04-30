@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginRegister from './pages/LoginRegister';
 import Categories from './pages/Categories';
-import GenrePage from './pages/GenrePage';
-import SeriesDetails from './pages/SeriesDetails';
 import UserDashboard from './pages/UserDashboard';
-import CommunityPage from './pages/CommunityPage.jsx';
-
-import Feedback from './pages/Feedback';
-
+import EbookDetail from './pages/EbookDetail';
+import Ebooks from './pages/Ebooks';
+import CategoryEbooks from './pages/CategoryEbooks';
+import SubscriptionOverview from './pages/SubscriptionOverview';
+import PrePayment from './pages/PrePayment';
+import SubscriptionSuccess from './pages/SubscriptionSuccess';
 
 function App() {
   return (
@@ -19,16 +19,15 @@ function App() {
       
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/LoginRegister" element={<LoginRegister />} />
+        <Route path="/login-register" element={<LoginRegister />} />
         <Route path="/Categories" element={<Categories />} />
-        <Route path="/Genres/:genreName" element={<GenrePage />} />
-        <Route path="/series/:slug" element={<SeriesDetails />} />
-        <Route path="/UserDashboard" element={<UserDashboard />} />
-        <Route path="/Community" element={<CommunityPage />} />
-
-
-        <Route path="/Feedback" element={<Feedback />} />
-        
+        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/ebook-detail" element={<EbookDetail />} />
+        <Route path="/ebooks" element={<Ebooks />} />
+        <Route path="/category-ebooks" element={<CategoryEbooks />} />
+        <Route path="/subscribe" element={<SubscriptionOverview />} />
+        <Route path="/pre-payment" element={<PrePayment />} />
+        <Route path="/subscription-success" element={<SubscriptionSuccess />} />
       </Routes>
     </Router>
   );

@@ -1,40 +1,27 @@
 import React from 'react';
-import Navbar from '../components/Navbar'; // Adjust the path as needed
-import HeadSection from '../components/HeadSection';
-import Bestsellers from '../components/Bestsellers';
-import Slideshow from '../components/Slideshow';
-import Trending from '../components/Trending';
-import CounterSection from '../components/CounterSection';
-import Footer from '../components/Footer';
-import BookOfTheMonth from '../components/BookOfTheMonth';
-
-
-
-import HomeFeedback from '../components/Feedback/HomeFeedback';
-
-
-
-
-
+import Navbar from '../components/HomePage/Navbar';
+import HeroSection from '../components/HomePage/HeroSection';
+import BestSellers from '../components/HomePage/BestSellers';
+import BookOfTheMonth from '../components/HomePage/BookOfTheMonth';
+import OurGenres from '../components/HomePage/OurGenres';
+import TrendingBooks from '../components/HomePage/TrendingBooks';
+import BookStats from '../components/HomePage/BookStats';
+import ContactUs from '../components/HomePage/ContactUs';
+import Footer from '../components/HomePage/Footer';
 
 
 function HomePage() {
   return (
     <>
     <Navbar />
-    <HeadSection /> 
-    <Bestsellers />
-    <BookOfTheMonth />
-    <Slideshow />
-    <Trending />
-    
-   
-    
-    <HomeFeedback />
+    <HeroSection /> 
+    <BestSellers />
+    <BookOfTheMonth/>
+    <OurGenres />
+    <TrendingBooks />
+    <BookStats />
+    <ContactUs />
     <Footer /> 
-
-    
-      
     </>
   );
 }

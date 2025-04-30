@@ -7,8 +7,9 @@ import Activity from "../components/Dashboard/Activity";
 import Subscriptions from "../components/Dashboard/Subscription";
 import CommunitySection from "../components/Dashboard/CommunitySection";
 import SettingsLogout from "../components/Dashboard/SettingLogout";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/HomePage/Navbar";
+import Footer from "../components/HomePage/Footer";
+
 
 export default function UserDashboard() {
   const [activeSection, setActiveSection] = useState("profile");
@@ -37,19 +38,15 @@ export default function UserDashboard() {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen bg-white text-gray-800">
-        {/* Sidebar */}
+      <div className="h-16" />
+      <div className="flex min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800">
         <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
-
-        {/* Main content */}
-        <main className="flex-1 p-6 md:p-10 overflow-y-auto bg-white">
-          {/* Inner background container */}
-          <div className="bg-gray-100 rounded-2xl shadow-md p-6 md:p-10 transition-all">
-          {renderSection()}
+        <main className="flex-1 p-6 md:p-10 overflow-y-auto">
+          <div className="bg-white rounded-2xl shadow-md p-6 md:p-10 transition-all">
+            {renderSection()}
           </div>
         </main>
       </div>
-
       <Footer />
     </>
   );

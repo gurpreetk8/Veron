@@ -74,7 +74,7 @@ const ProfileSummary = () => {
       <div className="flex items-start mb-8">
         <div className="relative">
           <img
-            src={userData.profile_picture || "/default-avatar.png"}
+            src={`http://localhost:8000/media/${userData.profile_picture}`}
             alt="Profile"
             className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover"
           />
